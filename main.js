@@ -3,10 +3,13 @@ const conLen = document.querySelectorAll(".container").length;
 
 shuf.addEventListener('click', shuffleDice);
 
+//generate random num
+function randomNumber(){
+  return Math.floor((6 * Math.random()) + 1);
+}
 
 
-
-//isShuffe
+//hide all box
 function shuffleDice(){
 
 for(let i = 0; i < conLen; i++){
@@ -14,23 +17,16 @@ document.querySelectorAll(".container")[i].style.visibility="hidden";
 }
 
 //diceone
-const num = Math.floor((6 * Math.random()) + 1);
+const num = randomNumber()
 
 
-for(let i = 0; i < 7; i++){
-  if(i ===num)
-document.querySelectorAll(".diceOne > div")[i-1].style.visibility="visible";
-}
-
+document.querySelectorAll(".diceOne > div")[num-1].style.visibility="visible";
 
 //dicetwo
-const ber = Math.floor((6 * Math.random()) + 1);
+const ber = randomNumber()
 
 
-for(let i = 0; i < 7; i++){
-  if(i === ber)
-document.querySelectorAll(".diceTwo > div")[i-1].style.visibility="visible";
-}
+document.querySelectorAll(".diceTwo > div")[ber-1].style.visibility="visible";
 
 const winner = document.querySelector('h2');
 
@@ -44,3 +40,4 @@ else{
   winner.innerHTML='DRAW';
 }
 }
+
