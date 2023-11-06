@@ -4,104 +4,98 @@
   box-sizing: border-box;
 }
 
-body{
-  
-}
-h2{
+h2 {
   text-align: center;
   color: green;
-  margin: .5rem 0;
+  margin-top: 0.8rem;
   transform: scaleX(1);
+  font-weight: bold;
 }
-h1{
-  padding: .4rem;
+h1 {
+  padding: 0.5rem;
   background-color: green;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 100%;
 }
-p{
+p {
   color: green;
   text-align: center;
   font-size: 1.5rem;
+  padding: 0.7rem;
 }
-.box-container{
+.box-container {
   margin: 5px auto;
   background-color: transparent;
-  width: 220px;
-  height: 230px;
-position: relative;
-background-color: yelow;
+  width: 200px;
+  height: 250px;
+  position: relative;
+  background-color: yelow;
 }
 
-.container{
-  display : grid;
+.container {
+  display: grid;
   border-radius: 10px;
   background-color: red;
-  width: 220px;
-  height: 200px;
+  width: 200px;
+  height: 180px;
   margin-bottom: 10px;
   visibility: hidden;
   position: absolute;
 }
-.one{
+.one {
   justify-content: center;
   align-content: center;
   visibility: visible;
 }
-.one .circle{
+.one .circle {
   border-radius: 50%;
   background-color: white;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-.two{
+.two {
   justify-content: center;
   align-content: center;
   gap: 20px 0;
-  
 }
-.two .circle{
+.two .circle {
   border-radius: 50%;
   background-color: white;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-.three{
-  
-  grid-template-columns: repeat(3,50px);
+.three {
+  grid-template-columns: repeat(3, 50px);
   grid-auto-rows: 50px;
   justify-content: center;
   align-content: center;
-  gap: .7rem 1rem;
+  gap: 0.7rem 1rem;
 }
-.three .circle{
-  
-  width: 50px;
-  height: 50px;
+.three .circle {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: white;
- 
 }
-.three .first{
+.three .first {
   grid-column: 1/2;
 }
 
-.three .second{
+.three .second {
   grid-column: 2/3;
   grid-row: 2/3;
 }
 
 .three .third {
   grid-column: 3/4;
-    grid-row: 3/4;
+  grid-row: 3/4;
 }
 
-.four{
-  
-  grid-template-columns: repeat(2,50px);
+.four {
+  grid-template-columns: repeat(2, 50px);
   justify-content: center;
   align-content: center;
   gap: 30px 30px;
@@ -110,13 +104,12 @@ background-color: yelow;
 .four .circle {
   border-radius: 50%;
   background-color: white;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-.five{
-  
-  grid-template-columns: repeat(3,50px);
+.five {
+  grid-template-columns: repeat(3, 50px);
   grid-auto-rows: 50px;
   justify-content: center;
   align-content: center;
@@ -125,92 +118,94 @@ background-color: yelow;
 .five .circle {
   border-radius: 50%;
   background-color: white;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-.five .first{
+.five .first {
   grid-column: 1 /2;
 }
 
-.five .second{
+.five .second {
   grid-column: 3 /4;
 }
 
-.five .third{
+.five .third {
   grid-column: 2 /3;
   grid-row: 2/3;
 }
-.five .forth{
+.five .forth {
   grid-column: 1/2;
   grid-row: 3/4;
 }
 
-.five .fifth{
+.five .fifth {
   grid-column: 3 /4;
   grid-row: 3/4;
 }
 
-
-
-
-.six{
-  grid-template-columns: repeat(2,50px);
+.six {
+  grid-template-columns: repeat(2, 50px);
   grid-template-rows: 50px;
   justify-content: center;
   align-content: center;
   gap: 10px 20px;
 }
 
-.six .circle{
+.six .circle {
   border-radius: 50%;
   background-color: white;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
-.shuffle-con{
+.shuffle-con {
   text-align: center;
 }
-.shuffle{
+.shuffle {
   padding: 1rem;
   color: white;
-  border:none;
+  border: none;
   background-color: green;
   border-radius: 10px;
   margin: auto;
 }
-.shuffleEffect{
-  outline: 5px solid seagreen;
-  opacity: .7;
-  transition: all .5s;
+.shuffle:hover {
+  opacity: 0.7;
+  transition: all 0.2s;
 }
+.shuffle:active {
+  background-color: #3e8e41;
 
-.second-dice{
+  transform: translateY(4px);
+}
+.second-dice {
   margin-top: 1rem;
-
 }
-.vs{
+.vs {
   text-align: center;
-  margin: .5rem 0; 
+  margin: 0.5rem 0;
   background-color: green;
-  padding:  .5rem;
+  padding: 0.5rem;
   font-size: 1rem;
   color: white;
 }
-
-@media (min-width: 900px){
-  .flex{
-    display:flex;
+.circle {
+  width: 40px;
+  height: 40px;
+}
+@media (min-width: 900px) {
+  .flex {
+    display: flex;
   }
-  .vs{
-    margin-top: .8rem;
+  .vs {
+    margin-top: 0.8rem;
     width: 2rem;
-    display:flex;
+    display: flex;
     height: 230px;
     align-items: center;
     justify-content: center;
   }
-  .shuffle{
+  .shuffle {
     margin: 2rem 0;
   }
 }
